@@ -1,0 +1,133 @@
+/* styles.css */
+.search-bar {
+    width: 50%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.notification {
+    background: #e7f3fe;
+    color: #31708f;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 10px;
+    transition: opacity 1s ease;
+}
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 8px auto;
+    padding: 0px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.product-list {
+    margin-top: 180px;
+    margin-left:-710px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex: 30;
+}
+
+.product {
+    background: #cfa4c0c1;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: calc(23% - 20px);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* styles.css */
+
+
+.cart {
+    margin-top: 70px;
+    margin-right: 40px;
+    flex: 4; /* Use flex-grow to adjust size dynamically */
+    padding: 90px; /* Reduced padding for better fitting */
+    background: #eef;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 400px; /* Consider adjusting height if needed */
+    overflow-y: auto;
+    /* It can also be set as a percentage if needed */
+    width: 500px; /* Adjust width to suit your layout */
+}
+
+/* Organizing cart item display */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: Justify;
+    margin-top: 10px; /* Space between items */
+    padding: 10px; /* Internal padding for better spacing */
+    border-bottom: 1px solid #ccc; /* Optional: add a line for separation */
+}
+
+/* Adjust text alignment for price */
+.cart-item h4 {
+    margin: 0; /* Remove default margin */
+}
+
+.cart-item p {
+    margin: 0; /* Remove default margin for pricing */
+    font-weight: bold; /* Emphasize the price */
+}
+
+/* Further adjust input styling */
+input[type="number"] {
+    width: 50px;
+    min-width: 30px; /* Ensure a minimum size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Optionally add hover effect to cart items */
+.cart-item:hover {
+    background-color: #f9f9f9; /* Lighten background on hover */
+}
